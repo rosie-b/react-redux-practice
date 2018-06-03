@@ -1,7 +1,7 @@
 # React/Redux practice
-I wanted to practice using react/redux to play with single page web app, making it responsive and withthe ability to easily add on components as I find new things to practice. 
+A place to practice using react/redux to build a responsive single page web app. 
 
-App uses express server, knex for migrating databases, as needed. Playing with SVG, practicing CRUD and RESTful routes also. 
+App uses express server, knex for migrating databases, as needed. Playing with SVG, practicing CRUD and RESTful routes, trying out Bootstrap framework. Building with intion of maintaining ability to easily add on components as I find new things to practice/explore. 
 
 Feedback, tips and tricks very welcome. 
 
