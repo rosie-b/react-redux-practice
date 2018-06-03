@@ -1,41 +1,23 @@
-# A starter project for React/Redux
+# React/Redux practice
 
-> A minimalistic React/Redux starter project
-
-To use:
-
+To set up:
 * Fork this repo
-* Rename your repo according to the app you're building
+* Rename the app to your project name
 
 ```sh
 git clone https://github.com/[your-org]/[your-app].git
-cd [your-app] && yarn
+cd [your-app]
+yarn
 ```
 
-This is the structure of this boilerplate:
+If you have an existing repo that you'd like to redirect this to, you can do this via the terminal:
 
 ```sh
-.
-├── client
-│   ├── actions
-│   │   └── index.js
-│   ├── components
-│   │   ├── AddWord.jsx
-│   │   ├── App.jsx
-│   │   ├── Word.jsx
-│   │   └── Words.jsx
-│   ├── reducers
-│   │   ├── index.js
-│   │   └── words.js
-│   └── index.js
-├── public
-│   ├── index.html
-│   └── main.css
-├── server
-│   ├── index.js
-│   └── server.js
-├── .gitignore
-├── package.json
-├── README.md
-└── webpack.config.js
+git remote set-url origin https://github.com/[your-org]/[your-app].git
 ```
+
+Get started and view in your browser:
+```sh
+yarn start
+```
+View via [http://localhost:3000](http://localhost:3000)

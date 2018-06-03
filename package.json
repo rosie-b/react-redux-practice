@@ -1,14 +1,21 @@
 {
-  "name": "boilerplate-react-redux",
-  "version": "0.2.0",
-  "description": "React Redux using express",
+  "name": "react-redux-practice",
+  "version": "0.1.0",
+  "author": "Rosie Burkett",
   "main": "server/index.js",
   "scripts": {
     "start": "webpack && node server",
-    "dev": "nodemon --watch server & webpack --watch"
+    "dev": "nodemon --watch server & webpack --watch",
+    "test": "jest"
   },
-  "author": "EDA",
-  "license": "ISC",
+  "jest": {
+    "collectCoverage": true,
+    "setupTestFrameworkScriptFile": "./test/client/localStorageMock"
+  },
+  "ava": {
+    "require": "babel-register",
+    "babel": "inherit"
+  },
   "babel": {
     "presets": [
       "env",
@@ -16,19 +23,20 @@
     ]
   },
   "devDependencies": {
+    "nodemon": "^1.14.12"
+  },
+  "dependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
-    "nodemon": "^1.14.12",
+    "express": "^4.16.2",
+    "jest": "^22.4.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
     "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.1"
-  },
-  "dependencies": {
-    "express": "^4.16.2"
   }
 }

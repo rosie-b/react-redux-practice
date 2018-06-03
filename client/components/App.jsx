@@ -1,12 +1,12 @@
 import React from 'react'
 
-import Words from './Words'
-import AddWord from './AddWord'
+import BoggleGame from './Boggle/BoggleGame'
+import TicTacToeGame from './TicTacToe/TicTacToeGame'
 
 const App = () => (
   <div className='app-container'>
-    <Words />
-    <AddWord />
+    <BoggleGame />
+    <TicTacToeGame />
   </div>
 )
 
