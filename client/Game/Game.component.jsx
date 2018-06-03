@@ -1,9 +1,9 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import Square from './Square'
-import Board from './Board'
+import Square from './Square.component'
+import Board from './Board.component'
 
-class TicTacToeGame extends React.Component {
+class Game extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -65,14 +65,16 @@ class TicTacToeGame extends React.Component {
     return (
       <div className="game">
         <div className="game-board">
-          <h1>TIC TAC TOE</h1>
+          <h1>Fancy a game?</h1>
           <Board 
             squares={current.squares}
             onClick={(i) => this.handleClick(i)}
           />
         </div>
         <div className="game-info">
+          <br/>
           <div>{status}</div>
+          <br/>
           <ol>{moves}</ol>
         </div>
       </div>
@@ -100,4 +102,4 @@ function  calculateWinner(squares) {
   return null;
 }
 
-export default connect()(TicTacToeGame)
+export default connect()(Game)

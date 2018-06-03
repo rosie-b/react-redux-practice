@@ -1,6 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import Square from './Square'
+import Square from './Square.component'
 
 class Board extends React.Component {
 
